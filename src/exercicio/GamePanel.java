@@ -157,7 +157,7 @@ public class GamePanel extends JPanel implements ActionListener, KeyListener {
         repaint();
     }
 
-    public void verificarColisao() {
+    public void verificarColisao() { //usa a técnica de alinhamento de eixos para verificar se está tendo colisão
         for (Ponto ponto : pontos) {
             if (jogadorX < ponto.x + ponto.tamanho && jogadorX + TAMANHO_JOGADOR > ponto.x &&
                 jogadorY < ponto.y + ponto.tamanho && jogadorY + TAMANHO_JOGADOR > ponto.y) { //calcula o tamanho do ponto, do jogador e a posição de ambos para determinar se houve ou não colisão
