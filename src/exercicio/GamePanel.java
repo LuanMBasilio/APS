@@ -9,7 +9,7 @@ import java.util.Random;
 class Ponto {
     int x, y, tamanho, valor; //posição eixo X, eixo Y, tamanho e valor do ponto
     Image imagem;
-    int identificador; // Identificador do ponto
+    int identificador; // Identificador do ponto, pode ser passada pra linha de declaração superior se necessário
 
     public Ponto(int x, int y, int tamanho, int valor, Image imagem, int identificador) {
         this.x = x; //posição do eixo X inicial do ponto
